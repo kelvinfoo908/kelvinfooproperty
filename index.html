@@ -137,7 +137,34 @@
     @media (max-width:699px){.listing-body{padding:12px}.listing-type{margin-top:0;font-size:.64rem}.listing-card h3{font-size:.82rem;line-height:1.2}.price{margin:6px 0 10px;font-size:1rem}.facts{gap:3px}.facts li{padding:6px 2px;border-radius:8px}.facts strong{overflow:visible;font-size:.62rem;line-height:1.05;text-overflow:clip;white-space:normal}.facts span{font-size:.52rem}.propertyguru-link{min-height:40px;margin-top:10px;padding:7px 5px;font-size:.66rem}.listing-flag{right:6px;bottom:6px;max-width:calc(100% - 12px);overflow:hidden;font-size:.52rem;text-overflow:ellipsis;white-space:nowrap}}
     @media (min-width:700px){.listing-tools{grid-template-columns:minmax(280px,1fr) auto;align-items:end}.listing-sort{display:flex}.listing-sort button{padding-inline:16px}.listing-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}}
     @media (min-width:1180px){.listing-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
-    /* LISTINGS_CATALOG_END */</style>
+    /* LISTINGS_CATALOG_END */
+    /* HOME_LOAN_CALCULATOR_START */
+    .loan-calculator{background:#f5f5f7}
+    .loan-calculator-head{max-width:760px;margin-bottom:30px}
+    .loan-calculator-head .lead{color:#626267}
+    .loan-calculator-grid{display:grid;gap:16px}
+    .loan-panel{padding:22px;border:1px solid #dedee3;border-radius:24px;background:#fff;box-shadow:0 16px 45px rgba(0,0,0,.07)}
+    .loan-panel h3{margin-bottom:20px}
+    .loan-fields{display:grid;gap:16px}
+    .loan-field{display:grid;gap:7px}
+    .loan-field label,.loan-field-label{font-size:.84rem;font-weight:700}
+    .loan-field input{width:100%;min-height:50px;padding:11px 14px;border:1px solid #d2d2d7;border-radius:12px;background:#fff;color:#111;font:500 1rem Inter}
+    .loan-field input:focus{border-color:#111;outline:3px solid rgba(0,0,0,.1)}
+    .loan-input-wrap{position:relative}.loan-input-wrap input{padding-left:48px}.loan-input-wrap-rate input{padding-left:14px;padding-right:45px}
+    .loan-affix{position:absolute;top:50%;left:14px;color:#626267;font-size:.84rem;transform:translateY(-50%);pointer-events:none}.loan-input-wrap-rate .loan-affix{right:14px;left:auto}
+    .loan-mode{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:4px;border-radius:12px;background:#f5f5f7}
+    .loan-mode button{min-height:40px;border:0;border-radius:9px;background:transparent;color:#626267;cursor:pointer;font-weight:700}
+    .loan-mode button[aria-pressed="true"]{background:#111;color:#fff;box-shadow:0 3px 10px rgba(0,0,0,.14)}
+    .loan-results{display:grid;gap:10px;margin:0 0 20px;padding:0;list-style:none}
+    .loan-result{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid #e5e5e8;color:#626267;font-size:.85rem}
+    .loan-result strong{color:#111;font:600 1rem Poppins;text-align:right}
+    .loan-result-primary{margin-bottom:5px;padding:18px;border:0;border-radius:16px;background:#111;color:#d2d2d7}
+    .loan-result-primary strong{color:#fff;font-size:1.45rem}
+    .loan-whatsapp{width:100%;margin-top:4px}
+    .loan-disclaimer{margin:14px 0 0;color:#626267;font-size:.72rem;line-height:1.55}
+    @media (min-width:760px){.loan-calculator-grid{grid-template-columns:1fr 1fr;gap:20px}.loan-panel{padding:30px}.loan-fields{grid-template-columns:1fr 1fr}.loan-field-wide{grid-column:1/-1}}
+    @media (max-width:374px){.loan-panel{padding:18px}.loan-result{align-items:flex-start;flex-direction:column;gap:5px}.loan-result strong{text-align:left}}
+    /* HOME_LOAN_CALCULATOR_END */</style>
   <!-- EDIT: Keep this schema aligned with the visible agent and FAQ content. -->
   <script type="application/ld+json">
   {
@@ -834,7 +861,57 @@
         <nav class="listing-pagination" id="listing-pagination" aria-label="Listings pages"></nav>
         <p class="listing-source">Listing details sourced from PropertyGuru on 17 November 2026. Availability may change. "Not listed" means the information was not shown on PropertyGuru.</p>
       </div>
-    </section>    <section class="section" id="faq">
+    </section>    <!-- HOME_LOAN_CALCULATOR_START -->
+    <section class="section loan-calculator" id="loan-calculator" aria-labelledby="loan-calculator-title">
+      <div class="container">
+        <div class="loan-calculator-head">
+          <p class="eyebrow">Malaysia home loan calculator</p>
+          <!-- EDIT: Calculator heading and introduction. -->
+          <h2 id="loan-calculator-title">Estimate your monthly home loan.</h2>
+          <p class="lead">Adjust the property price, down payment, interest rate and tenure to see an instant estimate.</p>
+        </div>
+        <div class="loan-calculator-grid">
+          <div class="loan-panel">
+            <h3>Loan details</h3>
+            <div class="loan-fields">
+              <div class="loan-field loan-field-wide">
+                <label for="loan-property-price">Property price</label>
+                <div class="loan-input-wrap"><span class="loan-affix">RM</span><input id="loan-property-price" type="number" min="0" step="1000" inputmode="decimal" value="500000"></div>
+              </div>
+              <div class="loan-field loan-field-wide">
+                <span class="loan-field-label">Down payment</span>
+                <div class="loan-mode" role="group" aria-label="Down payment unit">
+                  <button type="button" data-downpayment-mode="percent" aria-pressed="true">Percentage (%)</button>
+                  <button type="button" data-downpayment-mode="amount" aria-pressed="false">Amount (RM)</button>
+                </div>
+                <div class="loan-input-wrap loan-input-wrap-rate"><input id="loan-downpayment" type="number" min="0" step="0.1" inputmode="decimal" value="10" aria-label="Down payment"><span class="loan-affix" id="loan-downpayment-unit">%</span></div>
+              </div>
+              <div class="loan-field">
+                <label for="loan-interest-rate">Annual interest rate</label>
+                <div class="loan-input-wrap loan-input-wrap-rate"><input id="loan-interest-rate" type="number" min="0" max="20" step="0.01" inputmode="decimal" value="4"><span class="loan-affix">%</span></div>
+              </div>
+              <div class="loan-field">
+                <label for="loan-tenure">Loan tenure</label>
+                <div class="loan-input-wrap loan-input-wrap-rate"><input id="loan-tenure" type="number" min="1" max="35" step="1" inputmode="numeric" value="35"><span class="loan-affix">years</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="loan-panel" aria-live="polite">
+            <h3>Your estimate</h3>
+            <ul class="loan-results">
+              <li class="loan-result loan-result-primary"><span>Monthly instalment</span><strong id="loan-output-monthly">RM0</strong></li>
+              <li class="loan-result"><span>Down payment</span><strong id="loan-output-downpayment">RM0</strong></li>
+              <li class="loan-result"><span>Estimated loan amount</span><strong id="loan-output-amount">RM0</strong></li>
+              <li class="loan-result"><span>Estimated total interest</span><strong id="loan-output-interest">RM0</strong></li>
+            </ul>
+            <!-- EDIT: WhatsApp consultation label. -->
+            <a class="button loan-whatsapp" id="loan-whatsapp" href="https://wa.me/60167258223?text=" target="_blank" rel="noopener noreferrer">WhatsApp Consultation</a>
+            <p class="loan-disclaimer">Estimate only. Actual loan amount, interest rate, monthly instalment and approval are subject to the bank's assessment and terms. This is not financial advice or a bank quotation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HOME_LOAN_CALCULATOR_END -->    <section class="section" id="faq">
       <div class="container faq-grid"><div><p class="eyebrow">Frequently asked</p><h2>Before we start.</h2><p class="lead"><!-- EDIT -->A first conversation is simply a chance to understand what you need.</p></div>
         <div class="faq-list">
           <!-- EDIT: Keep visible FAQ copy aligned with JSON-LD. -->
@@ -894,7 +971,31 @@
     listingSearch.addEventListener('input',()=>{listingPage=1;applyListingView()});
     listingSortButtons.forEach(button=>button.addEventListener('click',()=>{listingSort=button.dataset.sort;listingPage=1;listingSortButtons.forEach(item=>item.setAttribute('aria-pressed',String(item===button)));applyListingView()}));
     listingPagination.addEventListener('click',event=>{const button=event.target.closest('[data-page]');if(button&&!button.disabled)changeListingPage(Number(button.dataset.page))});
-    applyListingView();    document.querySelector('#year').textContent=new Date().getFullYear();
+    applyListingView();
+    /* HOME_LOAN_CALCULATOR_JS_START */
+    /* HOME_LOAN_CALCULATOR_PURE_START */
+    function calculateHomeLoan(principal,annualRate,years){principal=Math.max(0,Number(principal)||0);annualRate=Math.max(0,Number(annualRate)||0);years=Math.max(0,Number(years)||0);const months=Math.round(years*12);if(!principal||!months)return{monthlyPayment:0,totalInterest:0};const monthlyRate=annualRate/100/12;if(!monthlyRate)return{monthlyPayment:principal/months,totalInterest:0};const factor=(1+monthlyRate)**months;const monthlyPayment=principal*monthlyRate*factor/(factor-1);return{monthlyPayment,totalInterest:Math.max(0,monthlyPayment*months-principal)}}
+    /* HOME_LOAN_CALCULATOR_PURE_END */
+    const loanPrice=document.querySelector('#loan-property-price');
+    const loanDownpayment=document.querySelector('#loan-downpayment');
+    const loanInterest=document.querySelector('#loan-interest-rate');
+    const loanTenure=document.querySelector('#loan-tenure');
+    const loanModeButtons=[...document.querySelectorAll('[data-downpayment-mode]')];
+    const loanDownpaymentUnit=document.querySelector('#loan-downpayment-unit');
+    const loanOutputDownpayment=document.querySelector('#loan-output-downpayment');
+    const loanOutputAmount=document.querySelector('#loan-output-amount');
+    const loanOutputMonthly=document.querySelector('#loan-output-monthly');
+    const loanOutputInterest=document.querySelector('#loan-output-interest');
+    const loanWhatsapp=document.querySelector('#loan-whatsapp');
+    const loanCurrency=new Intl.NumberFormat('en-MY',{style:'currency',currency:'MYR',maximumFractionDigits:0});
+    let loanDownpaymentMode='percent';
+    function loanNumber(value,min,max){const number=Number(value);return Math.min(max,Math.max(min,Number.isFinite(number)?number:min))}
+    function updateLoanCalculator(){const price=loanNumber(loanPrice.value,0,100000000);const rate=loanNumber(loanInterest.value,0,20);const years=loanNumber(loanTenure.value,1,35);let downpayment=loanDownpaymentMode==='percent'?price*loanNumber(loanDownpayment.value,0,100)/100:loanNumber(loanDownpayment.value,0,price);downpayment=Math.min(price,Math.max(0,downpayment));const principal=Math.max(0,price-downpayment);const result=calculateHomeLoan(principal,rate,years);loanOutputDownpayment.textContent=loanCurrency.format(downpayment);loanOutputAmount.textContent=loanCurrency.format(principal);loanOutputMonthly.textContent=loanCurrency.format(result.monthlyPayment);loanOutputInterest.textContent=loanCurrency.format(result.totalInterest);const message=`Hi Kelvin, I'd like a home loan consultation.\n\nProperty price: ${loanCurrency.format(price)}\nDown payment: ${loanCurrency.format(downpayment)}\nEstimated loan amount: ${loanCurrency.format(principal)}\nInterest rate: ${rate.toFixed(2)}% p.a.\nLoan tenure: ${years} years\nEstimated monthly instalment: ${loanCurrency.format(result.monthlyPayment)}\nEstimated total interest: ${loanCurrency.format(result.totalInterest)}\n\nPlease help me review my financing options.`;loanWhatsapp.href=`https://wa.me/60167258223?text=${encodeURIComponent(message)}`}
+    function setLoanDownpaymentMode(nextMode){if(nextMode===loanDownpaymentMode)return;const price=loanNumber(loanPrice.value,0,100000000);const current=loanNumber(loanDownpayment.value,0,loanDownpaymentMode==='percent'?100:price);const amount=loanDownpaymentMode==='percent'?price*current/100:current;loanDownpaymentMode=nextMode;loanDownpayment.value=nextMode==='percent'?(price?Math.min(100,amount/price*100).toFixed(2):0):Math.min(price,amount).toFixed(0);loanDownpayment.max=nextMode==='percent'?'100':String(price);loanDownpayment.step=nextMode==='percent'?'0.1':'1000';loanDownpaymentUnit.textContent=nextMode==='percent'?'%':'RM';loanModeButtons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.downpaymentMode===nextMode)));updateLoanCalculator()}
+    [loanPrice,loanDownpayment,loanInterest,loanTenure].forEach(input=>input.addEventListener('input',updateLoanCalculator));
+    loanModeButtons.forEach(button=>button.addEventListener('click',()=>setLoanDownpaymentMode(button.dataset.downpaymentMode)));
+    updateLoanCalculator();
+    /* HOME_LOAN_CALCULATOR_JS_END */    document.querySelector('#year').textContent=new Date().getFullYear();
   </script>
 </body>
 </html>
