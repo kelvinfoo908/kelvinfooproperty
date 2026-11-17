@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# EDIT: Update this URL if the website domain changes.
+Sitemap: https://kelvinfooproperty.vercel.app/sitemap.xml
