@@ -299,7 +299,7 @@
     <dialog class="proof-dialog" id="proof-dialog" aria-label="Enlarged achievement or review image">
       <button class="proof-close" type="button" aria-label="Close enlarged image">&times;</button>
       <img src="" alt="">
-    </dialog>                                                                                        <section class="section listings" id="listings">
+    </dialog>                                                                                            <section class="section listings" id="listings">
       <div class="container">
         <div class="section-head">
           <div><p class="eyebrow">Featured Listings</p><h2>Teluk Intan &amp; Kampar Property for Sale.</h2></div>
@@ -986,56 +986,7 @@
         <nav class="listing-pagination" id="listing-pagination" aria-label="Listings pages"></nav>
         <p class="listing-source">Listing details sourced from PropertyGuru on 17 November 2026. Availability may change. "Not listed" means the information was not shown on PropertyGuru.</p>
       </div>
-    </section>    <section class="section loan-calculator" id="loan-calculator" aria-labelledby="loan-calculator-title">
-      <div class="container">
-        <div class="loan-calculator-head">
-          <p class="eyebrow">Malaysia home loan calculator</p>
-          <!-- EDIT: Calculator heading and introduction. -->
-          <h2 id="loan-calculator-title">Estimate your monthly home loan.</h2>
-          <p class="lead">Adjust the property price, down payment, interest rate and tenure to see an instant estimate.</p>
-        </div>
-        <div class="loan-calculator-grid">
-          <div class="loan-panel">
-            <h3>Loan details</h3>
-            <div class="loan-fields">
-              <div class="loan-field loan-field-wide">
-                <label for="loan-property-price">Property price</label>
-                <div class="loan-input-wrap"><span class="loan-affix">RM</span><input id="loan-property-price" type="number" min="0" step="1000" inputmode="decimal" value="500000"></div>
-              </div>
-              <div class="loan-field loan-field-wide">
-                <span class="loan-field-label">Down payment</span>
-                <div class="loan-mode" role="group" aria-label="Down payment unit">
-                  <button type="button" data-downpayment-mode="percent" aria-pressed="true">Percentage (%)</button>
-                  <button type="button" data-downpayment-mode="amount" aria-pressed="false">Amount (RM)</button>
-                </div>
-                <div class="loan-input-wrap loan-input-wrap-rate"><input id="loan-downpayment" type="number" min="0" step="0.1" inputmode="decimal" value="10" aria-label="Down payment"><span class="loan-affix" id="loan-downpayment-unit">%</span></div>
-              </div>
-              <div class="loan-field">
-                <label for="loan-interest-rate">Annual interest rate</label>
-                <div class="loan-input-wrap loan-input-wrap-rate"><input id="loan-interest-rate" type="number" min="0" max="20" step="0.01" inputmode="decimal" value="4"><span class="loan-affix">%</span></div>
-              </div>
-              <div class="loan-field">
-                <label for="loan-tenure">Loan tenure</label>
-                <div class="loan-input-wrap loan-input-wrap-rate"><input id="loan-tenure" type="number" min="1" max="35" step="1" inputmode="numeric" value="35"><span class="loan-affix">years</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="loan-panel" aria-live="polite">
-            <h3>Your estimate</h3>
-            <ul class="loan-results">
-              <li class="loan-result loan-result-primary"><span>Monthly instalment</span><strong id="loan-output-monthly">RM0</strong></li>
-              <li class="loan-result"><span>Down payment</span><strong id="loan-output-downpayment">RM0</strong></li>
-              <li class="loan-result"><span>Estimated loan amount</span><strong id="loan-output-amount">RM0</strong></li>
-              <li class="loan-result"><span>Estimated total interest</span><strong id="loan-output-interest">RM0</strong></li>
-            </ul>
-            <!-- EDIT: WhatsApp consultation label. -->
-            <a class="button loan-whatsapp" id="loan-whatsapp" href="https://wa.me/60167258223?text=" target="_blank" rel="noopener noreferrer">WhatsApp Consultation</a>
-            <p class="loan-disclaimer">Estimate only. Actual loan amount, interest rate, monthly instalment and approval are subject to the bank's assessment and terms. This is not financial advice or a bank quotation.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- HOME_LOAN_CALCULATOR_END -->    <!-- HOME_LOAN_CALCULATOR_START -->
+    </section>    <!-- HOME_LOAN_CALCULATOR_START -->
     <section class="section loan-calculator" id="loan-calculator" aria-labelledby="loan-calculator-title">
       <div class="container">
         <div class="loan-calculator-head">
@@ -1153,7 +1104,8 @@
     window.addEventListener('resize',()=>{if(innerWidth>=980)setMenu(false)});
     const leadForm=document.querySelector('#lead-form');const formStatus=document.querySelector('#form-status');
     leadForm.addEventListener('submit',event=>{event.preventDefault();formStatus.classList.remove('success');const name=leadForm.name.value.trim();const phone=leadForm.phone.value.trim();const message=leadForm.message.value.trim();if(!name||!phone||!message){formStatus.textContent='Please complete your name, phone and message.';leadForm.querySelector(':invalid')?.focus();return}if(!/^[+\d][\d\s()-]{7,}$/.test(phone)){formStatus.textContent='Please enter a valid phone number.';leadForm.phone.focus();return}formStatus.textContent='Opening WhatsApp…';formStatus.classList.add('success');const text=`Hi Kelvin, my name is ${name}.\n\nPhone: ${phone}\n\nI'm looking for: ${message}`;window.open(whatsAppUrl(text),'_blank','noopener,noreferrer')});
-    const contactSection=document.querySelector('#contact');if('IntersectionObserver' in window){new IntersectionObserver(([entry])=>document.body.classList.toggle('contact-in-view',entry.isIntersecting),{threshold:.08}).observe(contactSection)}    /* LISTINGS_CATALOG_JS_START */
+    const contactSection=document.querySelector('#contact');if('IntersectionObserver' in window){new IntersectionObserver(([entry])=>document.body.classList.toggle('contact-in-view',entry.isIntersecting),{threshold:.08}).observe(contactSection)}
+    /* LISTINGS_CATALOG_JS_START */
     const areaTabs=[...document.querySelectorAll('[role="tab"][data-area-tab]')];
     const areaPanels=[...document.querySelectorAll('[role="tabpanel"][data-area-panel]')];
     const listingSearch=document.querySelector('#listing-search');
