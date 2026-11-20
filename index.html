@@ -113,33 +113,10 @@
     .hero-actions .button{min-width:132px}
     @media (min-width:700px){.hero{padding:48px 0 62px}.hero-grid{display:grid;grid-template-columns:340px minmax(0,1fr);align-items:center;gap:18px;text-align:left}.portrait-wrap{width:340px;max-width:340px;height:390px;margin:0}.portrait{object-position:64% 24%}.hero-intro{margin-inline:0}.hero-actions{justify-content:flex-start}}
     @media (min-width:980px){.hero{min-height:auto}.hero-grid{gap:12px}}
-    /* PROFILE_LAYOUT_END */    /* LISTINGS_CATALOG_START: PropertyGuru area tabs and listing cards */
-    .listing-tabs{display:flex;gap:8px;overflow-x:auto;margin:0 0 28px;padding:4px;scrollbar-width:none}
-    .listing-tabs::-webkit-scrollbar{display:none}
-    .listing-tabs button{min-height:46px;flex:0 0 auto;padding:10px 18px;border:1px solid #343438;border-radius:999px;background:#111113;color:#a1a1a6;cursor:pointer;font-weight:600}
-    .listing-tabs button[aria-selected="true"]{border-color:#f5f5f7;background:#f5f5f7;color:#050505}
-    .listing-panel[hidden]{display:none!important}
-    .listing-tools{display:grid;gap:14px;margin:0 0 14px}.listing-search{display:grid;gap:7px;color:#a1a1a6;font-size:.78rem;font-weight:600}.listing-search input{width:100%;min-height:50px;padding:0 17px;border:1px solid #343438;border-radius:14px;background:#111113;color:#f5f5f7}.listing-search input::placeholder{color:#6e6e73}.listing-sort{display:grid;grid-template-columns:1fr 1fr;gap:8px}.listing-sort button{min-height:46px;padding:9px 12px;border:1px solid #343438;border-radius:14px;background:#111113;color:#a1a1a6;cursor:pointer;font-size:.78rem;font-weight:600}.listing-sort button[aria-pressed="true"]{border-color:#f5f5f7;color:#f5f5f7}.listing-count{min-height:1.5em;margin:0 0 22px;color:#8e8e93;font-size:.8rem}.listing-empty{padding:30px;border:1px dashed #343438;border-radius:18px;color:#a1a1a6;text-align:center}.listing-card[hidden]{display:none!important}
-    .listing-image-wrap{display:grid;aspect-ratio:16/10;place-items:center;overflow:hidden;background:#18181b}
-    .listing-image-wrap img{width:100%;height:100%;object-fit:cover}
-    .image-fallback{color:#8e8e93;font-size:.82rem}
-    .listing-flag{position:absolute;right:10px;bottom:10px;padding:5px 8px;border-radius:999px;background:rgba(5,5,5,.82);color:#d2d2d7;font-size:.62rem}.listing-image-wrap{position:relative}
-    .listing-type{min-height:1.5em;margin:8px 0 0;color:#8e8e93;font-size:.82rem}
-    .listing-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-    .listing-card h3{display:-webkit-box;min-height:0;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:3}
-    .price{margin:7px 0 12px}
-    .facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-bottom:0}
-    .facts li{display:grid;gap:1px;min-width:0;padding:9px 8px;border-radius:12px;text-align:center}
-    .facts strong{overflow:hidden;color:#111;font-size:.79rem;text-overflow:ellipsis;white-space:nowrap}
-    .facts span{font-size:.65rem}
-    .propertyguru-link{margin-top:14px}
-    .listing-body{display:flex;min-height:0;height:auto;flex-direction:column}
-    .listing-source{margin:24px 0 0;color:#6e6e73;font-size:.72rem}
-    .listing-pagination{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:30px}.listing-pagination:empty{display:none}.listing-pagination button{display:grid;min-width:44px;height:44px;padding:0 12px;place-items:center;border:1px solid #343438;border-radius:12px;background:#111113;color:#a1a1a6;cursor:pointer;font-weight:600}.listing-pagination button[aria-current="page"]{border-color:#f5f5f7;background:#f5f5f7;color:#050505}.listing-pagination button:disabled{cursor:not-allowed;opacity:.38}
-    @media (max-width:699px){.listing-body{padding:12px}.listing-type{margin-top:0;font-size:.64rem}.listing-card h3{font-size:.82rem;line-height:1.2}.price{margin:6px 0 10px;font-size:1rem}.facts{gap:3px}.facts li{padding:6px 2px;border-radius:8px}.facts strong{overflow:visible;font-size:.62rem;line-height:1.05;text-overflow:clip;white-space:normal}.facts span{font-size:.52rem}.propertyguru-link{min-height:40px;margin-top:10px;padding:7px 5px;font-size:.66rem}.listing-flag{right:6px;bottom:6px;max-width:calc(100% - 12px);overflow:hidden;font-size:.52rem;text-overflow:ellipsis;white-space:nowrap}}
-    @media (min-width:700px){.listing-tools{grid-template-columns:minmax(280px,1fr) auto;align-items:end}.listing-sort{display:flex}.listing-sort button{padding-inline:16px}.listing-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}}
-    @media (min-width:1180px){.listing-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
-    /* LISTINGS_CATALOG_END */
+    /* PROFILE_LAYOUT_END */
+    /* ACHIEVEMENT_CAROUSEL_START */
+    .achievement-carousel{overflow:hidden;touch-action:pan-y}.achievement-slides{margin:0;padding:0;list-style:none}.achievement-slide[hidden]{display:none!important}.achievement-slide{height:100%}.achievement-slide .proof-open{display:grid;min-height:420px;place-items:center}.achievement-slide .proof-image{width:100%;height:100%;max-height:580px;object-fit:contain}.achievement-controls{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;padding:14px 18px 18px;border-top:1px solid #dedee3}.achievement-arrow{display:grid;width:42px;height:42px;padding:0;place-items:center;border:1px solid #d2d2d7;border-radius:50%;background:#fff;color:#111;cursor:pointer;font-size:1.3rem}.achievement-arrow:hover{background:#111;color:#fff}.achievement-dots{display:flex;align-items:center;justify-content:center;gap:8px}.achievement-dot{width:10px;height:10px;padding:0;border:1px solid #777;border-radius:50%;background:#fff;cursor:pointer}.achievement-dot[aria-current="true"]{border-color:#111;background:#111}.achievement-status{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}.achievement-carousel:focus-within{outline:2px solid transparent}.achievement-arrow:focus-visible,.achievement-dot:focus-visible{outline:3px solid rgba(0,0,0,.28);outline-offset:2px}@media(max-width:759px){.achievement-slide .proof-open{min-height:0}.achievement-slide .proof-image{height:auto;max-height:none}.achievement-controls{padding:12px 14px 16px}}@media(min-width:760px){.achievement-carousel{min-width:0}.achievement-slide{min-height:620px}.achievement-slide .proof-open{min-height:520px}}
+    /* ACHIEVEMENT_CAROUSEL_END */
     /* HOME_LOAN_CALCULATOR_START */
     .loan-calculator{background:#f5f5f7}
     .loan-calculator-head{max-width:760px;margin-bottom:30px}
@@ -166,10 +143,34 @@
     .loan-disclaimer{margin:14px 0 0;color:#626267;font-size:.72rem;line-height:1.55}
     @media (min-width:760px){.loan-calculator-grid{grid-template-columns:1fr 1fr;gap:20px}.loan-panel{padding:30px}.loan-fields{grid-template-columns:1fr 1fr}.loan-field-wide{grid-column:1/-1}}
     @media (max-width:374px){.loan-panel{padding:18px}.loan-result{align-items:flex-start;flex-direction:column;gap:5px}.loan-result strong{text-align:left}}
-    /* HOME_LOAN_CALCULATOR_END */
-    /* ACHIEVEMENT_CAROUSEL_START */
-    .achievement-carousel{overflow:hidden;touch-action:pan-y}.achievement-slides{margin:0;padding:0;list-style:none}.achievement-slide[hidden]{display:none!important}.achievement-slide{height:100%}.achievement-slide .proof-open{display:grid;min-height:420px;place-items:center}.achievement-slide .proof-image{width:100%;height:100%;max-height:580px;object-fit:contain}.achievement-controls{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;padding:14px 18px 18px;border-top:1px solid #dedee3}.achievement-arrow{display:grid;width:42px;height:42px;padding:0;place-items:center;border:1px solid #d2d2d7;border-radius:50%;background:#fff;color:#111;cursor:pointer;font-size:1.3rem}.achievement-arrow:hover{background:#111;color:#fff}.achievement-dots{display:flex;align-items:center;justify-content:center;gap:8px}.achievement-dot{width:10px;height:10px;padding:0;border:1px solid #777;border-radius:50%;background:#fff;cursor:pointer}.achievement-dot[aria-current="true"]{border-color:#111;background:#111}.achievement-status{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}.achievement-carousel:focus-within{outline:2px solid transparent}.achievement-arrow:focus-visible,.achievement-dot:focus-visible{outline:3px solid rgba(0,0,0,.28);outline-offset:2px}@media(max-width:759px){.achievement-slide .proof-open{min-height:0}.achievement-slide .proof-image{height:auto;max-height:none}.achievement-controls{padding:12px 14px 16px}}@media(min-width:760px){.achievement-carousel{min-width:0}.achievement-slide{min-height:620px}.achievement-slide .proof-open{min-height:520px}}
-    /* ACHIEVEMENT_CAROUSEL_END */</style>
+    /* HOME_LOAN_CALCULATOR_END */    /* LISTINGS_CATALOG_START: PropertyGuru area tabs and listing cards */
+    .listing-tabs{display:flex;gap:8px;overflow-x:auto;margin:0 0 28px;padding:4px;scrollbar-width:none}
+    .listing-tabs::-webkit-scrollbar{display:none}
+    .listing-tabs button{min-height:46px;flex:0 0 auto;padding:10px 18px;border:1px solid #343438;border-radius:999px;background:#111113;color:#a1a1a6;cursor:pointer;font-weight:600}
+    .listing-tabs button[aria-selected="true"]{border-color:#f5f5f7;background:#f5f5f7;color:#050505}
+    .listing-panel[hidden]{display:none!important}
+    .listing-tools{display:grid;gap:14px;margin:0 0 14px}.listing-search{display:grid;gap:7px;color:#a1a1a6;font-size:.78rem;font-weight:600}.listing-search input{width:100%;min-height:50px;padding:0 17px;border:1px solid #343438;border-radius:14px;background:#111113;color:#f5f5f7}.listing-search input::placeholder{color:#6e6e73}.listing-sort{display:grid;grid-template-columns:1fr 1fr;gap:8px}.listing-sort button{min-height:46px;padding:9px 12px;border:1px solid #343438;border-radius:14px;background:#111113;color:#a1a1a6;cursor:pointer;font-size:.78rem;font-weight:600}.listing-sort button[aria-pressed="true"]{border-color:#f5f5f7;color:#f5f5f7}.listing-count{min-height:1.5em;margin:0 0 22px;color:#8e8e93;font-size:.8rem}.listing-empty{padding:30px;border:1px dashed #343438;border-radius:18px;color:#a1a1a6;text-align:center}.listing-card[hidden]{display:none!important}
+    .listing-image-wrap{display:grid;aspect-ratio:16/10;place-items:center;overflow:hidden;background:#18181b}
+    .listing-image-wrap img{width:100%;height:100%;object-fit:cover}
+    .image-fallback{color:#8e8e93;font-size:.82rem}
+    .listing-flag{position:absolute;right:10px;bottom:10px;padding:5px 8px;border-radius:999px;background:rgba(5,5,5,.82);color:#d2d2d7;font-size:.62rem}.listing-image-wrap{position:relative}
+    .listing-type{min-height:1.5em;margin:8px 0 0;color:#8e8e93;font-size:.82rem}
+    .listing-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .listing-card h3{display:-webkit-box;min-height:0;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:3}
+    .price{margin:7px 0 12px}
+    .facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-bottom:0}
+    .facts li{display:grid;gap:1px;min-width:0;padding:9px 8px;border-radius:12px;text-align:center}
+    .facts strong{overflow:hidden;color:#111;font-size:.79rem;text-overflow:ellipsis;white-space:nowrap}
+    .facts span{font-size:.65rem}
+    .listing-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:14px}.listing-actions a{min-width:0;padding-inline:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.listing-view-link{border-color:#d2d2d7;background:#fff;color:#111}.listing-enquire-link{border-color:#111;background:#111;color:#fff}
+    .listing-body{display:flex;min-height:0;height:auto;flex-direction:column}
+    .listing-source{margin:24px 0 0;color:#6e6e73;font-size:.72rem}
+    .listing-pagination{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:30px}.listing-pagination:empty{display:none}.listing-pagination button{display:grid;min-width:44px;height:44px;padding:0 12px;place-items:center;border:1px solid #343438;border-radius:12px;background:#111113;color:#a1a1a6;cursor:pointer;font-weight:600}.listing-pagination button[aria-current="page"]{border-color:#f5f5f7;background:#f5f5f7;color:#050505}.listing-pagination button:disabled{cursor:not-allowed;opacity:.38}
+    @media (max-width:699px){.listing-body{padding:12px}.listing-type{margin-top:0;font-size:.64rem}.listing-card h3{font-size:.82rem;line-height:1.2}.price{margin:6px 0 10px;font-size:1rem}.facts{gap:3px}.facts li{padding:6px 2px;border-radius:8px}.facts strong{overflow:visible;font-size:.62rem;line-height:1.05;text-overflow:clip;white-space:normal}.facts span{font-size:.52rem}.listing-actions{gap:5px;margin-top:10px}.listing-actions .button{min-height:40px;padding:6px 3px;font-size:.58rem;letter-spacing:-.01em}.listing-flag{right:6px;bottom:6px;max-width:calc(100% - 12px);overflow:hidden;font-size:.52rem;text-overflow:ellipsis;white-space:nowrap}}
+    @media (min-width:700px) and (max-width:899px){.listing-actions .button{min-height:44px;padding:7px 3px;font-size:.65rem;letter-spacing:-.01em}}
+    @media (min-width:700px){.listing-tools{grid-template-columns:minmax(280px,1fr) auto;align-items:end}.listing-sort{display:flex}.listing-sort button{padding-inline:16px}.listing-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}}
+    @media (min-width:1180px){.listing-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+    /* LISTINGS_CATALOG_END */</style>
   <!-- EDIT: Keep this schema aligned with the visible agent and FAQ content. -->
   <script type="application/ld+json">
   {
@@ -298,7 +299,7 @@
     <dialog class="proof-dialog" id="proof-dialog" aria-label="Enlarged achievement or review image">
       <button class="proof-close" type="button" aria-label="Close enlarged image">&times;</button>
       <img src="" alt="">
-    </dialog>                                                                        <section class="section listings" id="listings">
+    </dialog>                                                                                        <section class="section listings" id="listings">
       <div class="container">
         <div class="section-head">
           <div><p class="eyebrow">Featured Listings</p><h2>Teluk Intan &amp; Kampar Property for Sale.</h2></div>
@@ -335,7 +336,10 @@
                 <li><strong>2</strong><span>Baths</span></li>
                 <li><strong>1,577 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-anson-park-freehold-good-location-for-sale-%E5%AE%89%E9%A1%BA%E5%8F%B8%E9%A9%AC%E7%99%BB%E6%B0%B8%E4%B9%85%E5%9C%B0%E5%A5%91%E5%8D%95%E5%B1%82%E6%8E%92%E5%B1%8B%E5%87%BA%E5%94%AE-for-sale-by-kelvin-foo-502433017" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-anson-park-freehold-good-location-for-sale-%E5%AE%89%E9%A1%BA%E5%8F%B8%E9%A9%AC%E7%99%BB%E6%B0%B8%E4%B9%85%E5%9C%B0%E5%A5%91%E5%8D%95%E5%B1%82%E6%8E%92%E5%B1%8B%E5%87%BA%E5%94%AE-for-sale-by-kelvin-foo-502433017" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0AAnson%20Park%2C%20Teluk%20Intan%0APrice%3A%20RM%20260%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-anson-park-freehold-good-location-for-sale-%25E5%25AE%2589%25E9%25A1%25BA%25E5%258F%25B8%25E9%25A9%25AC%25E7%2599%25BB%25E6%25B0%25B8%25E4%25B9%2585%25E5%259C%25B0%25E5%25A5%2591%25E5%258D%2595%25E5%25B1%2582%25E6%258E%2592%25E5%25B1%258B%25E5%2587%25BA%25E5%2594%25AE-for-sale-by-kelvin-foo-502433017" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -353,7 +357,10 @@
                 <li><strong>3</strong><span>Baths</span></li>
                 <li><strong>1,400 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-maju-indah-freehold-near-anson-bay-medical-centre-double-storey-for-sale-%E5%8F%8C%E5%B1%82%E6%8E%92%E5%B1%8B%E5%87%BA%E5%94%AE-for-sale-by-kelvin-foo-502422044" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-maju-indah-freehold-near-anson-bay-medical-centre-double-storey-for-sale-%E5%8F%8C%E5%B1%82%E6%8E%92%E5%B1%8B%E5%87%BA%E5%94%AE-for-sale-by-kelvin-foo-502422044" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Maju%20Indah%2C%20Teluk%20Intan%0APrice%3A%20RM%20380%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-taman-maju-indah-freehold-near-anson-bay-medical-centre-double-storey-for-sale-%25E5%258F%258C%25E5%25B1%2582%25E6%258E%2592%25E5%25B1%258B%25E5%2587%25BA%25E5%2594%25AE-for-sale-by-kelvin-foo-502422044" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -371,7 +378,10 @@
                 <li><strong>5</strong><span>Baths</span></li>
                 <li><strong>3,200 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-for-sale-by-kelvin-foo-500742367" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-for-sale-by-kelvin-foo-500742367" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Teluk%20Intan%2C%20Teluk%20Intan%0APrice%3A%20RM%20950%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-for-sale-by-kelvin-foo-500742367" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -389,7 +399,10 @@
                 <li><strong>3</strong><span>Baths</span></li>
                 <li><strong>1,760 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-bunga-raya-freehold-double-storey-for-sale-for-sale-by-kelvin-foo-502076038" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-bunga-raya-freehold-double-storey-for-sale-for-sale-by-kelvin-foo-502076038" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Bunga%20Raya%2C%20Teluk%20Intan%0APrice%3A%20RM%20350%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-taman-bunga-raya-freehold-double-storey-for-sale-for-sale-by-kelvin-foo-502076038" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -407,7 +420,10 @@
                 <li><strong>2</strong><span>Baths</span></li>
                 <li><strong>2,800 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-pekan-baru-freehold-semi-d-for-sale-dijual-%E5%AE%89%E9%A1%BA%E6%96%B0%E8%A1%97%E5%9C%BA%E5%8D%8A%E7%8B%AC%E7%AB%8B%E5%87%BA%E5%94%AE-for-sale-by-kelvin-foo-502388711" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-pekan-baru-freehold-semi-d-for-sale-dijual-%E5%AE%89%E9%A1%BA%E6%96%B0%E8%A1%97%E5%9C%BA%E5%8D%8A%E7%8B%AC%E7%AB%8B%E5%87%BA%E5%94%AE-for-sale-by-kelvin-foo-502388711" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0APekan%20Baru%2C%20Teluk%20Intan%0APrice%3A%20RM%20360%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-pekan-baru-freehold-semi-d-for-sale-dijual-%25E5%25AE%2589%25E9%25A1%25BA%25E6%2596%25B0%25E8%25A1%2597%25E5%259C%25BA%25E5%258D%258A%25E7%258B%25AC%25E7%25AB%258B%25E5%2587%25BA%25E5%2594%25AE-for-sale-by-kelvin-foo-502388711" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -425,7 +441,10 @@
                 <li><strong>3</strong><span>Baths</span></li>
                 <li><strong>2,000 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-pekan-baru-freehold-double-storey-%E5%AE%89%E9%A1%BA%E6%96%B0%E8%A1%97%E5%9C%BA%E5%8F%8C%E5%B1%82%E6%8E%92%E5%B1%8B-for-sale-by-kelvin-foo-502360807" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-pekan-baru-freehold-double-storey-%E5%AE%89%E9%A1%BA%E6%96%B0%E8%A1%97%E5%9C%BA%E5%8F%8C%E5%B1%82%E6%8E%92%E5%B1%8B-for-sale-by-kelvin-foo-502360807" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0APekan%20Baru%2C%20Teluk%20Intan%0APrice%3A%20RM%20538%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-pekan-baru-freehold-double-storey-%25E5%25AE%2589%25E9%25A1%25BA%25E6%2596%25B0%25E8%25A1%2597%25E5%259C%25BA%25E5%258F%258C%25E5%25B1%2582%25E6%258E%2592%25E5%25B1%258B-for-sale-by-kelvin-foo-502360807" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -443,7 +462,10 @@
                 <li><strong>6</strong><span>Baths</span></li>
                 <li><strong>2,800 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/freehold-2-5-semi-d-in-teluk-intan-taman-melor-impian-with-clubhouse-for-sale-by-kelvin-foo-502002023" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/freehold-2-5-semi-d-in-teluk-intan-taman-melor-impian-with-clubhouse-for-sale-by-kelvin-foo-502002023" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Melor%2C%20Teluk%20Intan%0APrice%3A%20RM%20850%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Ffreehold-2-5-semi-d-in-teluk-intan-taman-melor-impian-with-clubhouse-for-sale-by-kelvin-foo-502002023" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -461,7 +483,10 @@
                 <li><strong>4</strong><span>Baths</span></li>
                 <li><strong>1,650 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-eastern-garden-sungai-nibong-new-project-2-storey-terrace-semi-d-projek-baru-for-sale-by-kelvin-foo-501893164" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-eastern-garden-sungai-nibong-new-project-2-storey-terrace-semi-d-projek-baru-for-sale-by-kelvin-foo-501893164" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0AEastern%20Garden%2C%20Sungai%20Nibong%2C%20Teluk%20Intan%0APrice%3A%20RM%20568%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-eastern-garden-sungai-nibong-new-project-2-storey-terrace-semi-d-projek-baru-for-sale-by-kelvin-foo-501893164" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -479,7 +504,10 @@
                 <li><strong>3</strong><span>Baths</span></li>
                 <li><strong>1,400 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-melor-3-freehold-below-market-value-double-storey-for-sale-by-kelvin-foo-502348234" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-melor-3-freehold-below-market-value-double-storey-for-sale-by-kelvin-foo-502348234" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Melor%203%2C%20Teluk%20Intan%0APrice%3A%20RM%20430%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-taman-melor-3-freehold-below-market-value-double-storey-for-sale-by-kelvin-foo-502348234" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -497,7 +525,10 @@
                 <li><strong>2</strong><span>Baths</span></li>
                 <li><strong>1,540 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-impiana-ii-single-storey-for-sale-%E5%AE%89%E9%A1%BA%E5%8D%95%E5%B1%82%E6%8E%92%E5%B1%8B%E5%87%BA%E5%94%AE-for-sale-by-kelvin-foo-501557861" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-impiana-ii-single-storey-for-sale-%E5%AE%89%E9%A1%BA%E5%8D%95%E5%B1%82%E6%8E%92%E5%B1%8B%E5%87%BA%E5%94%AE-for-sale-by-kelvin-foo-501557861" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Impiana%202%2C%20Teluk%20Intan%0APrice%3A%20RM%20360%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-taman-impiana-ii-single-storey-for-sale-%25E5%25AE%2589%25E9%25A1%25BA%25E5%258D%2595%25E5%25B1%2582%25E6%258E%2592%25E5%25B1%258B%25E5%2587%25BA%25E5%2594%25AE-for-sale-by-kelvin-foo-501557861" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -515,7 +546,10 @@
                 <li><strong>3</strong><span>Baths</span></li>
                 <li><strong>3,250 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-jalan-changkat-jong-freehold-semi-d-corner-for-sale-for-sale-by-kelvin-foo-502310265" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-jalan-changkat-jong-freehold-semi-d-corner-for-sale-for-sale-by-kelvin-foo-502310265" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0AJalan%20Changkat%20Jong%2C%20Teluk%20Intan%0APrice%3A%20RM%20480%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-jalan-changkat-jong-freehold-semi-d-corner-for-sale-for-sale-by-kelvin-foo-502310265" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -533,7 +567,10 @@
                 <li><strong>2</strong><span>Baths</span></li>
                 <li><strong>2,695 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-indah-jaya-near-taman-ros-semi-d-good-location-for-sale-by-kelvin-foo-501941422" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-indah-jaya-near-taman-ros-semi-d-good-location-for-sale-by-kelvin-foo-501941422" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Indah%20Jaya%2C%20Teluk%20Intan%0APrice%3A%20RM%20500%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-taman-indah-jaya-near-taman-ros-semi-d-good-location-for-sale-by-kelvin-foo-501941422" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -551,7 +588,10 @@
                 <li><strong>3</strong><span>Baths</span></li>
                 <li><strong>3,896 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-sri-manggis-freehold-corner-for-sale-for-sale-by-kelvin-foo-501920957" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-sri-manggis-freehold-corner-for-sale-for-sale-by-kelvin-foo-501920957" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Sri%20Manggis%2C%20Teluk%20Intan%0APrice%3A%20RM%20550%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-taman-sri-manggis-freehold-corner-for-sale-for-sale-by-kelvin-foo-501920957" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -569,7 +609,10 @@
                 <li><strong>4</strong><span>Baths</span></li>
                 <li><strong>1,628 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-juta-intan-freehold-double-storey-for-sale-for-sale-by-kelvin-foo-501557591" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-juta-intan-freehold-double-storey-for-sale-for-sale-by-kelvin-foo-501557591" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Juta%20Intan%2C%20Teluk%20Intan%0APrice%3A%20RM%20620%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-taman-juta-intan-freehold-double-storey-for-sale-for-sale-by-kelvin-foo-501557591" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -587,7 +630,10 @@
                 <li><strong>2</strong><span>Baths</span></li>
                 <li><strong>2,210 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-sri-jaya-double-storey-for-sale-for-sale-by-kelvin-foo-501524926" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-sri-jaya-double-storey-for-sale-for-sale-by-kelvin-foo-501524926" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Sri%20Jaya%2C%20Teluk%20Intan%0APrice%3A%20RM%20418%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-taman-sri-jaya-double-storey-for-sale-for-sale-by-kelvin-foo-501524926" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -605,7 +651,10 @@
                 <li><strong>2</strong><span>Baths</span></li>
                 <li><strong>3,200 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/taman-teluk-intan-freehold-semi-d-for-sale-%E5%AE%89%E9%A1%BA%E5%AE%9D%E9%87%91%E8%8A%B1%E5%9B%AD%E6%B0%B8%E4%B9%85%E5%9C%B0%E5%A5%91%E5%87%BA%E5%94%AE-for-sale-by-kelvin-foo-501423726" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/taman-teluk-intan-freehold-semi-d-for-sale-%E5%AE%89%E9%A1%BA%E5%AE%9D%E9%87%91%E8%8A%B1%E5%9B%AD%E6%B0%B8%E4%B9%85%E5%9C%B0%E5%A5%91%E5%87%BA%E5%94%AE-for-sale-by-kelvin-foo-501423726" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Teluk%20Intan%2C%20Teluk%20Intan%0APrice%3A%20RM%20550%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Ftaman-teluk-intan-freehold-semi-d-for-sale-%25E5%25AE%2589%25E9%25A1%25BA%25E5%25AE%259D%25E9%2587%2591%25E8%258A%25B1%25E5%259B%25AD%25E6%25B0%25B8%25E4%25B9%2585%25E5%259C%25B0%25E5%25A5%2591%25E5%2587%25BA%25E5%2594%25AE-for-sale-by-kelvin-foo-501423726" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -623,7 +672,10 @@
                 <li><strong>3</strong><span>Baths</span></li>
                 <li><strong>1,785 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-cicely-taman-cahaya-freehold-double-storey-for-sale-for-sale-by-kelvin-foo-501414860" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-cicely-taman-cahaya-freehold-double-storey-for-sale-for-sale-by-kelvin-foo-501414860" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Cicely%20%2F%20Taman%20Cahaya%2C%20Teluk%20Intan%0APrice%3A%20RM%20390%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-taman-cicely-taman-cahaya-freehold-double-storey-for-sale-for-sale-by-kelvin-foo-501414860" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -641,7 +693,10 @@
                 <li><strong>4</strong><span>Baths</span></li>
                 <li><strong>1,760 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-banjar-jaya-double-storey-for-sale-for-sale-by-kelvin-foo-501405800" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-banjar-jaya-double-storey-for-sale-for-sale-by-kelvin-foo-501405800" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Banjar%20Jaya%2C%20Teluk%20Intan%0APrice%3A%20RM%20550%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-taman-banjar-jaya-double-storey-for-sale-for-sale-by-kelvin-foo-501405800" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -659,7 +714,10 @@
                 <li><strong>2</strong><span>Baths</span></li>
                 <li><strong>1,680 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-sri-emas-jalan-maharajalela-freehold-single-storey-for-sale-dijual-for-sale-by-kelvin-foo-501390495" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-sri-emas-jalan-maharajalela-freehold-single-storey-for-sale-dijual-for-sale-by-kelvin-foo-501390495" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Sri%20Emas%2C%20Teluk%20Intan%0APrice%3A%20RM%20310%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-taman-sri-emas-jalan-maharajalela-freehold-single-storey-for-sale-dijual-for-sale-by-kelvin-foo-501390495" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -677,7 +735,10 @@
                 <li><strong>3</strong><span>Baths</span></li>
                 <li><strong>1,540 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-ros-freehold-double-storey-fully-extended-good-location-for-sale-for-sale-by-kelvin-foo-502165312" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-ros-freehold-double-storey-fully-extended-good-location-for-sale-for-sale-by-kelvin-foo-502165312" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Ros%2C%20Teluk%20Intan%0APrice%3A%20RM%20530%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-taman-ros-freehold-double-storey-fully-extended-good-location-for-sale-for-sale-by-kelvin-foo-502165312" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -695,7 +756,10 @@
                 <li><strong>1</strong><span>Baths</span></li>
                 <li><strong>1,200 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-desa-bakti-for-sale-full-loan-rumah-dijual-for-sale-by-kelvin-foo-502133134" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-desa-bakti-for-sale-full-loan-rumah-dijual-for-sale-by-kelvin-foo-502133134" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Desa%20Bakti%2C%20Teluk%20Intan%0APrice%3A%20RM%20155%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-taman-desa-bakti-for-sale-full-loan-rumah-dijual-for-sale-by-kelvin-foo-502133134" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -713,7 +777,10 @@
                 <li><strong>2</strong><span>Baths</span></li>
                 <li><strong>1,680 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-cicely-rumah-setingkat-dijual-for-sale-full-loan-for-sale-by-kelvin-foo-502121697" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-cicely-rumah-setingkat-dijual-for-sale-full-loan-for-sale-by-kelvin-foo-502121697" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Cicely%2C%20Teluk%20Intan%0APrice%3A%20RM%20300%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-taman-cicely-rumah-setingkat-dijual-for-sale-full-loan-for-sale-by-kelvin-foo-502121697" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -731,7 +798,10 @@
                 <li><strong>3</strong><span>Baths</span></li>
                 <li><strong>4,326 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-changkat-freehold-semi-d-big-land-for-sale-dijual-%E5%AE%89%E9%A1%BA%E6%B0%B8%E4%B9%85%E5%9C%B0%E5%A5%91%E5%8D%8A%E7%8B%AC%E7%AB%8B%E5%87%BA%E5%94%AE-for-sale-by-kelvin-foo-502112974" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/teluk-intan-taman-changkat-freehold-semi-d-big-land-for-sale-dijual-%E5%AE%89%E9%A1%BA%E6%B0%B8%E4%B9%85%E5%9C%B0%E5%A5%91%E5%8D%8A%E7%8B%AC%E7%AB%8B%E5%87%BA%E5%94%AE-for-sale-by-kelvin-foo-502112974" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Changkat%2C%20Teluk%20Intan%0APrice%3A%20RM%20580%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fteluk-intan-taman-changkat-freehold-semi-d-big-land-for-sale-dijual-%25E5%25AE%2589%25E9%25A1%25BA%25E6%25B0%25B8%25E4%25B9%2585%25E5%259C%25B0%25E5%25A5%2591%25E5%258D%258A%25E7%258B%25AC%25E7%25AB%258B%25E5%2587%25BA%25E5%2594%25AE-for-sale-by-kelvin-foo-502112974" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
         </div>
@@ -753,7 +823,10 @@
                 <li><strong>2</strong><span>Baths</span></li>
                 <li><strong>1,760 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/langkap-taman-pertama-double-storey-for-sale-for-sale-by-kelvin-foo-60022548" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/langkap-taman-pertama-double-storey-for-sale-for-sale-by-kelvin-foo-60022548" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Pertama%2C%20Langkap%0APrice%3A%20RM%20250%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Flangkap-taman-pertama-double-storey-for-sale-for-sale-by-kelvin-foo-60022548" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
         </div>
@@ -775,7 +848,10 @@
                 <li><strong>3</strong><span>Baths</span></li>
                 <li><strong>1,540 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/kampar-taman-golden-dragon-freehold-double-storey-for-sale-%E9%87%91%E5%AE%9D%E9%87%91%E9%BE%99%E5%9B%AD%E6%B0%B8%E4%B9%85%E5%9C%B0%E5%A5%91%E5%8F%8C%E5%B1%82%E6%8E%92%E5%B1%8B%E5%87%BA%E5%94%AE-for-sale-by-kelvin-foo-501973335" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/kampar-taman-golden-dragon-freehold-double-storey-for-sale-%E9%87%91%E5%AE%9D%E9%87%91%E9%BE%99%E5%9B%AD%E6%B0%B8%E4%B9%85%E5%9C%B0%E5%A5%91%E5%8F%8C%E5%B1%82%E6%8E%92%E5%B1%8B%E5%87%BA%E5%94%AE-for-sale-by-kelvin-foo-501973335" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Golden%20Dragon%2C%20Kampar%0APrice%3A%20RM%20300%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fkampar-taman-golden-dragon-freehold-double-storey-for-sale-%25E9%2587%2591%25E5%25AE%259D%25E9%2587%2591%25E9%25BE%2599%25E5%259B%25AD%25E6%25B0%25B8%25E4%25B9%2585%25E5%259C%25B0%25E5%25A5%2591%25E5%258F%258C%25E5%25B1%2582%25E6%258E%2592%25E5%25B1%258B%25E5%2587%25BA%25E5%2594%25AE-for-sale-by-kelvin-foo-501973335" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -793,7 +869,10 @@
                 <li><strong>2</strong><span>Baths</span></li>
                 <li><strong>1,099 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/trails-of-kampar-townhouse-fully-furnished-for-sale-near-utar-for-sale-by-kelvin-foo-502315892" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/trails-of-kampar-townhouse-fully-furnished-for-sale-near-utar-for-sale-by-kelvin-foo-502315892" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATrails%20of%20Kampar%2C%20Kampar%0APrice%3A%20RM%20270%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Ftrails-of-kampar-townhouse-fully-furnished-for-sale-near-utar-for-sale-by-kelvin-foo-502315892" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -811,7 +890,10 @@
                 <li><strong>3</strong><span>Baths</span></li>
                 <li><strong>1,400 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/kampar-taman-perak-jaya-double-storey-for-sale-%E9%87%91%E5%AE%9D%E5%9F%8E%E5%B8%82%E8%8A%B1%E5%9B%AD%E5%87%BA%E5%94%AE-for-sale-by-kelvin-foo-501463033" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/kampar-taman-perak-jaya-double-storey-for-sale-%E9%87%91%E5%AE%9D%E5%9F%8E%E5%B8%82%E8%8A%B1%E5%9B%AD%E5%87%BA%E5%94%AE-for-sale-by-kelvin-foo-501463033" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Perak%20Jaya%2C%20Kampar%0APrice%3A%20RM%20438%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fkampar-taman-perak-jaya-double-storey-for-sale-%25E9%2587%2591%25E5%25AE%259D%25E5%259F%258E%25E5%25B8%2582%25E8%258A%25B1%25E5%259B%25AD%25E5%2587%25BA%25E5%2594%25AE-for-sale-by-kelvin-foo-501463033" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -829,7 +911,10 @@
                 <li><strong>1</strong><span>Baths</span></li>
                 <li><strong>Land size not stated</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/champs-elysees-for-sale-by-kelvin-foo-502197425" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/champs-elysees-for-sale-by-kelvin-foo-502197425" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0AChamps%20Elysees%2C%20Kampar%0APrice%3A%20RM%2098%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fchamps-elysees-for-sale-by-kelvin-foo-502197425" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -847,7 +932,10 @@
                 <li><strong>10</strong><span>Baths</span></li>
                 <li><strong>1,540 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/terrace-house-at-bandar-barat-for-sale-by-kelvin-foo-43473070" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/terrace-house-at-bandar-barat-for-sale-by-kelvin-foo-43473070" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Bandar%20Barat%2C%20Bandar%20Barat%2C%20Kampar%0APrice%3A%20RM%20430%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fterrace-house-at-bandar-barat-for-sale-by-kelvin-foo-43473070" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -865,7 +953,10 @@
                 <li><strong>10</strong><span>Baths</span></li>
                 <li><strong>1,540 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/terrace-house-at-bandar-barat-for-sale-by-kelvin-foo-43473080" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/terrace-house-at-bandar-barat-for-sale-by-kelvin-foo-43473080" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Bandar%20Barat%2C%20Bandar%20Barat%2C%20Kampar%0APrice%3A%20RM%20430%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fterrace-house-at-bandar-barat-for-sale-by-kelvin-foo-43473080" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
           <!-- EDIT: Listing details are sourced from PropertyGuru. -->
@@ -883,7 +974,10 @@
                 <li><strong>3</strong><span>Baths</span></li>
                 <li><strong>3,800 sqft</strong><span>Land size</span></li>
               </ul>
-              <a class="button propertyguru-link" href="https://www.propertyguru.com.my/property-listing/kampar-taman-kampar-perdana-double-storey-corner-near-lotus-utar-for-sale-by-kelvin-foo-501378726" target="_blank" rel="noopener noreferrer">View on PropertyGuru <span aria-hidden="true">&nearr;</span></a>
+              <div class="listing-actions">
+                <a class="button button-outline listing-view-link" href="https://www.propertyguru.com.my/property-listing/kampar-taman-kampar-perdana-double-storey-corner-near-lotus-utar-for-sale-by-kelvin-foo-501378726" target="_blank" rel="noopener noreferrer">View Listing</a>
+                <a class="button listing-enquire-link" href="https://wa.me/60167258223?text=Hi%20Kelvin%2C%20I%27m%20interested%20in%20this%20property%3A%0ATaman%20Kampar%20Perdana%2C%20Kampar%0APrice%3A%20RM%20428%2C000%0APropertyGuru%3A%20https%3A%2F%2Fwww.propertyguru.com.my%2Fproperty-listing%2Fkampar-taman-kampar-perdana-double-storey-corner-near-lotus-utar-for-sale-by-kelvin-foo-501378726" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+              </div>
             </div>
           </article>
         </div>
@@ -892,7 +986,56 @@
         <nav class="listing-pagination" id="listing-pagination" aria-label="Listings pages"></nav>
         <p class="listing-source">Listing details sourced from PropertyGuru on 17 November 2026. Availability may change. "Not listed" means the information was not shown on PropertyGuru.</p>
       </div>
-    </section>    <!-- HOME_LOAN_CALCULATOR_START -->
+    </section>    <section class="section loan-calculator" id="loan-calculator" aria-labelledby="loan-calculator-title">
+      <div class="container">
+        <div class="loan-calculator-head">
+          <p class="eyebrow">Malaysia home loan calculator</p>
+          <!-- EDIT: Calculator heading and introduction. -->
+          <h2 id="loan-calculator-title">Estimate your monthly home loan.</h2>
+          <p class="lead">Adjust the property price, down payment, interest rate and tenure to see an instant estimate.</p>
+        </div>
+        <div class="loan-calculator-grid">
+          <div class="loan-panel">
+            <h3>Loan details</h3>
+            <div class="loan-fields">
+              <div class="loan-field loan-field-wide">
+                <label for="loan-property-price">Property price</label>
+                <div class="loan-input-wrap"><span class="loan-affix">RM</span><input id="loan-property-price" type="number" min="0" step="1000" inputmode="decimal" value="500000"></div>
+              </div>
+              <div class="loan-field loan-field-wide">
+                <span class="loan-field-label">Down payment</span>
+                <div class="loan-mode" role="group" aria-label="Down payment unit">
+                  <button type="button" data-downpayment-mode="percent" aria-pressed="true">Percentage (%)</button>
+                  <button type="button" data-downpayment-mode="amount" aria-pressed="false">Amount (RM)</button>
+                </div>
+                <div class="loan-input-wrap loan-input-wrap-rate"><input id="loan-downpayment" type="number" min="0" step="0.1" inputmode="decimal" value="10" aria-label="Down payment"><span class="loan-affix" id="loan-downpayment-unit">%</span></div>
+              </div>
+              <div class="loan-field">
+                <label for="loan-interest-rate">Annual interest rate</label>
+                <div class="loan-input-wrap loan-input-wrap-rate"><input id="loan-interest-rate" type="number" min="0" max="20" step="0.01" inputmode="decimal" value="4"><span class="loan-affix">%</span></div>
+              </div>
+              <div class="loan-field">
+                <label for="loan-tenure">Loan tenure</label>
+                <div class="loan-input-wrap loan-input-wrap-rate"><input id="loan-tenure" type="number" min="1" max="35" step="1" inputmode="numeric" value="35"><span class="loan-affix">years</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="loan-panel" aria-live="polite">
+            <h3>Your estimate</h3>
+            <ul class="loan-results">
+              <li class="loan-result loan-result-primary"><span>Monthly instalment</span><strong id="loan-output-monthly">RM0</strong></li>
+              <li class="loan-result"><span>Down payment</span><strong id="loan-output-downpayment">RM0</strong></li>
+              <li class="loan-result"><span>Estimated loan amount</span><strong id="loan-output-amount">RM0</strong></li>
+              <li class="loan-result"><span>Estimated total interest</span><strong id="loan-output-interest">RM0</strong></li>
+            </ul>
+            <!-- EDIT: WhatsApp consultation label. -->
+            <a class="button loan-whatsapp" id="loan-whatsapp" href="https://wa.me/60167258223?text=" target="_blank" rel="noopener noreferrer">WhatsApp Consultation</a>
+            <p class="loan-disclaimer">Estimate only. Actual loan amount, interest rate, monthly instalment and approval are subject to the bank's assessment and terms. This is not financial advice or a bank quotation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HOME_LOAN_CALCULATOR_END -->    <!-- HOME_LOAN_CALCULATOR_START -->
     <section class="section loan-calculator" id="loan-calculator" aria-labelledby="loan-calculator-title">
       <div class="container">
         <div class="loan-calculator-head">
@@ -1010,7 +1153,8 @@
     window.addEventListener('resize',()=>{if(innerWidth>=980)setMenu(false)});
     const leadForm=document.querySelector('#lead-form');const formStatus=document.querySelector('#form-status');
     leadForm.addEventListener('submit',event=>{event.preventDefault();formStatus.classList.remove('success');const name=leadForm.name.value.trim();const phone=leadForm.phone.value.trim();const message=leadForm.message.value.trim();if(!name||!phone||!message){formStatus.textContent='Please complete your name, phone and message.';leadForm.querySelector(':invalid')?.focus();return}if(!/^[+\d][\d\s()-]{7,}$/.test(phone)){formStatus.textContent='Please enter a valid phone number.';leadForm.phone.focus();return}formStatus.textContent='Opening WhatsApp…';formStatus.classList.add('success');const text=`Hi Kelvin, my name is ${name}.\n\nPhone: ${phone}\n\nI'm looking for: ${message}`;window.open(whatsAppUrl(text),'_blank','noopener,noreferrer')});
-    const contactSection=document.querySelector('#contact');if('IntersectionObserver' in window){new IntersectionObserver(([entry])=>document.body.classList.toggle('contact-in-view',entry.isIntersecting),{threshold:.08}).observe(contactSection)}    const areaTabs=[...document.querySelectorAll('[role="tab"][data-area-tab]')];
+    const contactSection=document.querySelector('#contact');if('IntersectionObserver' in window){new IntersectionObserver(([entry])=>document.body.classList.toggle('contact-in-view',entry.isIntersecting),{threshold:.08}).observe(contactSection)}    /* LISTINGS_CATALOG_JS_START */
+    const areaTabs=[...document.querySelectorAll('[role="tab"][data-area-tab]')];
     const areaPanels=[...document.querySelectorAll('[role="tabpanel"][data-area-panel]')];
     const listingSearch=document.querySelector('#listing-search');
     const listingSortButtons=[...document.querySelectorAll('[data-sort]')];
@@ -1029,7 +1173,7 @@
     listingSortButtons.forEach(button=>button.addEventListener('click',()=>{listingSort=button.dataset.sort;listingPage=1;listingSortButtons.forEach(item=>item.setAttribute('aria-pressed',String(item===button)));applyListingView()}));
     listingPagination.addEventListener('click',event=>{const button=event.target.closest('[data-page]');if(button&&!button.disabled)changeListingPage(Number(button.dataset.page))});
     applyListingView();
-    /* HOME_LOAN_CALCULATOR_JS_START */
+    /* LISTINGS_CATALOG_JS_END */    /* HOME_LOAN_CALCULATOR_JS_START */
     /* HOME_LOAN_CALCULATOR_PURE_START */
     function calculateHomeLoan(principal,annualRate,years){principal=Math.max(0,Number(principal)||0);annualRate=Math.max(0,Number(annualRate)||0);years=Math.max(0,Number(years)||0);const months=Math.round(years*12);if(!principal||!months)return{monthlyPayment:0,totalInterest:0};const monthlyRate=annualRate/100/12;if(!monthlyRate)return{monthlyPayment:principal/months,totalInterest:0};const factor=(1+monthlyRate)**months;const monthlyPayment=principal*monthlyRate*factor/(factor-1);return{monthlyPayment,totalInterest:Math.max(0,monthlyPayment*months-principal)}}
     /* HOME_LOAN_CALCULATOR_PURE_END */
